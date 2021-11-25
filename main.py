@@ -24,8 +24,8 @@ class CheckPhotos():
         dets = detector(img, 1)
 
         for k, d in enumerate(dets):
-            print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
-                k, d.left(), d.top(), d.right(), d.bottom()))
+            # print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
+            #     k, d.left(), d.top(), d.right(), d.bottom()))
             shape = sp(img, d)
             win1.clear_overlay()
             win1.add_overlay(d)
@@ -39,8 +39,8 @@ class CheckPhotos():
         win2.set_image(img)
         dets_webcam = detector(img, 1)
         for k, d in enumerate(dets_webcam):
-            print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
-                k, d.left(), d.top(), d.right(), d.bottom()))
+            # print("Detection {}: Left: {} Top: {} Right: {} Bottom: {}".format(
+            #     k, d.left(), d.top(), d.right(), d.bottom()))
             shape = sp(img, d)
             win2.clear_overlay()
             win2.add_overlay(d)
