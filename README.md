@@ -1,11 +1,23 @@
 # Проверка лиц в МЭИ
-Сделано студентом МЭИ по прикладной информатике для защиты предмета проектной деятельности
+Сделано студентами МЭИ по прикладной информатике для защиты предмета проектной деятельности
 
 
 
 # Ссылки на модели:
 Фигуральная модель
--http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+- https://disk.yandex.ru/d/zKES_tEC8Scoog
 
 Лицевая модель
--http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
+- https://disk.yandex.ru/d/KdKHXBQd61Dq6g
+
+# Quick how to
+Первым делом нужно иметь две фоточки в формате .jpg или .png для сравнения.
+Потом написать следующее:
+```
+isThisASame = CheckPhotos("recModel.dat", "shapeModel.dat").check_two_photos("photo1.jpg", "photo2.jpg")
+print(isThisASame) # Вернет значение True или False
+
+```
+
+# Другие функции...
+Документация в разработке
